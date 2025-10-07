@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dilsara Supeshala — Portfolio</title>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+  <meta name="description" content="Dilsara Supeshala — IT student portfolio (HTML / CSS / JS)." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Dilsara<span class="logo-dot">.</span></a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+    <section id="hero" class="hero container">
+      <div class="hero-content">
+        <div class="profile-card" aria-hidden="false">
+          <div class="profile-image-wrap">
+            <img id="profileImage" src="images/profile.jpg" alt="Profile photo of Dilsara Supeshala">
+            <label for="profileUpload" class="upload-btn" title="Upload profile photo">
+              <input id="profileUpload" type="file" accept="image/*" hidden>
+              <span class="camera"></span>
+            </label>
+          </div>
+          
+        </div>
+
+        <div class="hero-text">
+          <h1>Hi — I’m <span class="accent">Dilsara Supeshala</span></h1>
+          <p class="lead">IT student building intuitive mobile & web experiences. I like Flutter, React Native, and creating clean UI with real-world value.</p>
+          <div class="hero-ctas">
+            <a href="projects.html" class="btn">See projects</a>
+            <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+          </div>
+
+          <ul class="quick-meta">
+            <li><strong>Degree:</strong> BSc (Hons) in IT</li>
+            <li><strong>Location:</strong> Sri Lanka</li>
+            <li><strong>Looking for:</strong> Internship — mobile dev</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="skills" class="section container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid" role="list">
+        <div class="skill" role="listitem">HTML & CSS</div>
+        <div class="skill" role="listitem">JavaScript (vanilla)</div>
+        <div class="skill" role="listitem">Flutter / Dart</div>
+        <div class="skill" role="listitem">React Native</div>
+        <div class="skill" role="listitem">Git & GitHub</div>
+        <div class="skill" role="listitem">Databases (SQL,NoSQL,</br>MongoDB,HiveDB,)</div>
+      </div>
+    </section>
+
+    
+    <section id="projects-preview" class="section container">
+      <h2 class="section-title">Selected projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="images/project1.jpg" alt="Project 1 screenshot">
+          <div class="project-body">
+            <h3>Pizza Hub</h3>
+            <div class="project-actions">
+              <p>PizzaShop is a React Native mobile app with Firebase integration that lets users securely create accounts with their name, email, and password. The signup screen features a clean UI, loading indicators, and real-time data storage in Firestore. Built with a modular structure, it ensures smooth performance and easy scalability for future pizza ordering features.</p>
+              <a href="projects.html" class="link">View details →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/project2.jpg" alt="Project 2 screenshot">
+          <div class="project-body">
+            <h3>Finance Tracker (Flutter)</h3>
+            <p>Finance Tracker is a simple and elegant Flutter mobile app that helps users manage their daily income and expenses efficiently.
+Built with Hive for offline storage and Provider for state management, it offers a smooth, modern UI with features like add/edit/delete transactions, custom categories, and swipe-to-delete with confirmation.</p>
+            <div class="project-actions">
+              <a href="projects.html" class="link">View details →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/project3.jpg" alt="Project 3 screenshot">
+          <div class="project-body">
+            <h3>User Management System (React)</h3>
+            <p>Modern React & Node.js web application for managing users efficiently. It features a responsive frontend with forms and tables to add, update, and delete users, including details like ID, Name, Age, Contact No, Email, and Position. The Position field uses a dropdown with a clear placeholder and displays color-coded badges for easy visual identification. The backend is powered by Node.js, Express, and MongoDB, ensuring reliable data storage and seamless CRUD operations.</p>
+            <div class="project-actions">
+              <a href="projects.html" class="link">View details →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    
+    <section id="contact-cta" class="section container contact-cta">
+      <h2>Want to work together?</h2>
+      <p>I'm available for internships and part-time work. Let’s connect.</p>
+      <a href="contact.html" class="btn large">Contact me</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Dilsara Supeshala — Built with HTML • CSS • JS</p>
+    <div class="socials">
+      <a href="https://github.com/dilsara12" aria-label="GitHub" class="social-icon github">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/dilsara-supeshala-5811591b7/" aria-label="LinkedIn" class="social-icon linkedin">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:dilsarasup@gmail.com" aria-label="Email" class="social-icon email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+  
+  <script src="js/script.js" defer></script>
+</body>
+</html>

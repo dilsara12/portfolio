@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Dilsara Supeshala</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+</head>
+
+<body>
+  
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Dilsara<span class="logo-dot">.</span></a>
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+      <h1 class="section-title">My Projects</h1>
+      <p class="intro-text">
+        A selection of my favorite academic and personal projects.  
+        These demonstrate my work in mobile, web, and AI-related development.
+      </p>
+
+      
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="ai">AI Projects</button>
+      </div>
+
+      <div class="projects-grid" id="projectGrid">
+        
+        <article class="project-card" data-category="mobile">
+          <img src="images/project1.jpg" alt="PizzaShop app screenshot">
+          <div class="project-body">
+            <h3>Pizza Hub</h3>
+            <p>PizzaShop is a React Native mobile app with Firebase integration that lets users securely create accounts with their name, email, and password. The signup screen features a clean UI, loading indicators, and real-time data storage in Firestore. Built with a modular structure, it ensures smooth performance and easy scalability for future pizza ordering features.</p>
+            <p><strong>Tech:</strong> React Native (with TypeScript),Firebase Firestore,React Hooks (useState)</p>
+            <a href="#" class="btn-ghost">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="mobile">
+          <img src="images/project2.jpg" alt="Finance Tracker app screenshot">
+          <div class="project-body">
+            <h3>Finance Tracker</h3>
+            <p>Finance Tracker is a simple and elegant Flutter mobile app that helps users manage their daily income and expenses efficiently.
+Built with Hive for offline storage and Provider for state management, it offers a smooth, modern UI with features like add/edit/delete transactions,</p>
+            <p><strong>Tech:</strong>Flutter,Hive DB</p>
+            <a href="#" class="btn-ghost">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <img src="images/project3.jpg" alt="User Management System screenshot">
+          <div class="project-body">
+            <h3>User Management System (React MERN)</h3>
+            <p>Modern React & Node.js web application for managing users efficiently. It features a responsive frontend with forms and tables to add, update, and delete users, including details like ID, Name, Age, Contact No, Email, and Position. The Position field uses a dropdown with a clear placeholder and displays color-coded badges for easy visual identification. The backend is powered by Node.js, Express, and MongoDB, ensuring reliable data storage and seamless CRUD operations.</p>
+            <p><strong>Tech:</strong>React,Material-UI,Node.js,Express,MongoDB</p>
+            <a href="#" class="btn-ghost">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <img src="images/project4.png" alt="Weather web app screenshot">
+          <div class="project-body">
+            <h3>WeatherNow</h3>
+            <p>This Weather App provides real-time weather information for cities worldwide. Users can search for any city and get current temperature, humidity, wind speed, and weather conditions in a clean and interactive interface. The app leverages APIs to fetch accurate weather data and presents it in an intuitive, user-friendly design, making it easy for anyone to stay updated on the weather.</p>
+            <p><strong>Tech:</strong> HTML, CSS, JS, OpenWeather API</p>
+            <a href="#" class="btn-ghost">View on GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Dilsara Supeshala — Built with HTML • CSS • JS</p>
+    <div class="socials">
+      <a href="https://github.com/dilsara12" aria-label="GitHub" class="social-icon github">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/dilsara-supeshala-5811591b7/" aria-label="LinkedIn" class="social-icon linkedin">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:dilsarasup@gmail.com" aria-label="Email" class="social-icon email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
