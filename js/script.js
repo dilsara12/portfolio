@@ -1,6 +1,6 @@
-/* script.js — small helpers for profile upload, nav toggle, footer year, active nav link */
+
 document.addEventListener('DOMContentLoaded', () => {
-  // Elements
+ 
   const profileUpload = document.getElementById('profileUpload');
   const profileImage = document.getElementById('profileImage');
   const resetBtn = document.getElementById('resetProfile');
@@ -8,16 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const navList = document.getElementById('nav-list');
   const yearEl = document.getElementById('year');
 
-  // Populate year
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // Load saved profile (base64) from localStorage if present
+  
   const saved = localStorage.getItem('portfolio_profile');
   if (saved) {
     profileImage.src = saved;
   }
 
-  // Upload new profile photo (stored to localStorage as data URL)
+  
   if (profileUpload) {
     profileUpload.addEventListener('change', (e) => {
       const file = e.target.files && e.target.files[0];
@@ -37,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Reset to default
+  
   if (resetBtn) {
     resetBtn.addEventListener('click', () => {
       localStorage.removeItem('portfolio_profile');
@@ -45,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Mobile nav toggle
+  
   if (navToggle && navList) {
     navToggle.addEventListener('click', () => {
       const open = navList.classList.toggle('open');
@@ -53,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Active nav link on click
+  
   const navLinks = document.querySelectorAll('.nav-link');
   navLinks.forEach(a => {
     a.addEventListener('click', () => {
@@ -63,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Optional: set active nav link on scroll (simple approach)
+  
   const sections = document.querySelectorAll('main section[id]');
   const setActiveOnScroll = () => {
     const fromTop = window.scrollY + 80;
@@ -83,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', setActiveOnScroll);
   setActiveOnScroll();
 });
-// ==== PROJECT FILTER ====
+
 const filters = document.querySelectorAll('.filter-btn');
 const projects = document.querySelectorAll('#projectGrid .project-card');
 
@@ -102,7 +101,7 @@ filters.forEach(btn => {
   });
 });
 
-// ==== CONTACT FORM VALIDATION ====
+
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
@@ -118,7 +117,7 @@ if (contactForm) {
       return;
     }
 
-    // Simple Email Validation
+    
     const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     if (!emailPattern.test(email)) {
       msg.textContent = '❌ Please enter a valid email.';
@@ -126,7 +125,7 @@ if (contactForm) {
       return;
     }
 
-    msg.textContent = '✅ Message sent successfully!';
+    msg.textContent = ' Message sent successfully!';
     msg.style.color = 'lightgreen';
     contactForm.reset();
   });

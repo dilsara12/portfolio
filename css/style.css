@@ -49,7 +49,6 @@ body{
 .upload-btn{position:absolute;right:6px;bottom:6px;background:rgba(0,0,0,0.5);padding:8px;border-radius:10px;color:var(--text);cursor:pointer}
 .reset-btn{margin-top:0.6rem;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:0.35rem 0.6rem;border-radius:8px;cursor:pointer}
 
-/* Hero text */
 .hero-text{max-width:620px}
 h1{font-size:1.8rem;margin:0 0 0.4rem}
 .accent{color:var(--accent)}
@@ -59,13 +58,13 @@ h1{font-size:1.8rem;margin:0 0 0.4rem}
 .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
 .large{padding:0.8rem 1.1rem}
 
-/* Skills */
+
 .section{padding:2rem 0}
 .section-title{font-size:1.1rem;margin-bottom:0.6rem}
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0.6rem}
 .skill{background:var(--card);padding:0.8rem;border-radius:12px;text-align:center;color:var(--text)}
 
-/* Projects */
+
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
 .project-card{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
 .project-card img{width:100%;height:140px;object-fit:cover}
@@ -73,24 +72,24 @@ h1{font-size:1.8rem;margin:0 0 0.4rem}
 .project-actions{margin-top:0.6rem}
 .link{color:var(--accent);text-decoration:none;font-weight:600}
 
-/* CTA */
+
 .contact-cta{text-align:center;background:linear-gradient(180deg, rgba(124,58,237,0.06), transparent);padding:1.4rem;border-radius:12px;}
 
-/* Footer */
+
 .site-footer{margin-top:2rem;padding:1rem 0;color:var(--muted)}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
 
-/* Utilities & responsive */
+
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 
-/* Small screens */
+
 @media (max-width:880px){
   .hero-content{flex-direction:column-reverse;align-items:center}
   .nav-list{position:absolute;right:1rem;top:56px;background:rgba(6,10,18,0.95);padding:0.8rem;border-radius:10px;flex-direction:column;display:none}
   .nav-list.open{display:flex}
   .nav-toggle{display:inline-block}
 }
-/* ==== ABOUT PAGE ==== */
+
 .about-content {
   display: flex;
   flex-wrap: wrap;
@@ -164,7 +163,7 @@ h1{font-size:1.8rem;margin:0 0 0.4rem}
     max-width: 240px;
   }
 }
-/* ==== PROJECTS PAGE ==== */
+
 .intro-text {
   color: var(--muted);
   max-width: 700px;
@@ -193,7 +192,7 @@ h1{font-size:1.8rem;margin:0 0 0.4rem}
   color: white;
 }
 
-/* ==== CONTACT PAGE ==== */
+
 .contact-form {
   max-width: 600px;
   margin: 1.5rem auto;
@@ -290,12 +289,11 @@ h1{font-size:1.8rem;margin:0 0 0.4rem}
   font-size: 20px;
 }
 
-/* Individual colors */
+
 .social-icon.github { background: #333; }
 .social-icon.linkedin { background: #0077b5; }
 .social-icon.email { background: #dd4b39; }
 
-/* Hover effect */
 .social-icon:hover {
   transform: scale(1.2);
   opacity: 0.8;
